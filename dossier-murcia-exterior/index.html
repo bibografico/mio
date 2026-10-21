@@ -108,6 +108,7 @@ section+section{border-top:1px solid var(--line)}
 .endcard{aspect-ratio:16/9;background:#0f0f0f;border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:#fff;text-align:center;padding:20px}
 .endcard i{width:26px;height:26px;border-radius:50%;background:#f2c72e}
 .endcard b{font:400 clamp(1.8rem,6vw,3rem) var(--serif)}
+.endcard.pend{background:#e9ebe7;color:var(--ink)}.endcard.pend span{color:var(--muted)}
 .endcard span{font-size:.85rem;color:#aaa;max-width:34ch}
 
 /* SCRIPT */
@@ -129,7 +130,7 @@ footer{padding-block:28px max(28px,env(safe-area-inset-bottom));font:400 .7rem v
 <body>
 
 <header class="hero">
-  <img src="img/p01_huerta.jpg" alt="Huerta murciana al amanecer">
+  <img src="img/p09_catedral.jpg" alt="Catedral de Murcia al atardecer">
   <div class="wrap">
     <span class="eyebrow">Propuesta audiovisual · Para aprobación</span>
     <h1>Día de las Comunidades de la Región de Murcia en el Exterior</h1>
@@ -155,12 +156,22 @@ footer{padding-block:28px max(28px,env(safe-area-inset-bottom));font:400 .7rem v
 </div></section>
 
 <section><div class="wrap">
+  <div class="head"><span class="eyebrow">El hilo</span><h2>Un limón que viaja por el mundo.</h2>
+  <p style="color:#3d433f;max-width:60ch">Un limón de Murcia es el hilo invisible de la pieza. Pasa de mano en mano y de país en país con cortes de cámara que lo mantienen en el mismo lugar del encuadre: Lyon, Örebro, Rosario. Una sola imagen que viaja y une tres vidas, sin que nadie tenga que nombrarla.</p></div>
+  <div class="trio">
+    <figure class="lucia"><div class="frame"><img src="img/p06a_lucia_mano.jpg" alt="" loading="lazy"></div><figcaption>Lucía <span>Lyon</span></figcaption></figure>
+    <figure class="andres"><div class="frame"><img src="img/p06b_andres_mano.jpg" alt="" loading="lazy"></div><figcaption>Andrés <span>Örebro</span></figcaption></figure>
+    <figure class="valen"><div class="frame"><img src="img/p06c_valentina_mano.jpg" alt="" loading="lazy"></div><figcaption>Valentina <span>Rosario</span></figcaption></figure>
+  </div>
+</div></section>
+
+<section><div class="wrap">
   <div class="head"><span class="eyebrow">Las voces</span><h2>Cuatro voces, sesenta segundos.</h2></div>
   <div class="voices">
     <div class="voice region"><span class="tag">Murcia · Narradora</span><b>La Región</b><p>Mujer madura, cálida, sin impostar. Una tierra que no se mueve para que todos sepan volver.</p></div>
     <div class="voice lucia"><span class="tag">Lyon · Francia</span><b>Lucía</b><p>Joven y alegre, con la sonrisa en la voz y un acento murciano suave.</p></div>
     <div class="voice andres"><span class="tag">Örebro · Suecia</span><b>Andrés</b><p>Grave, tranquilo, con una nostalgia serena.</p></div>
-    <div class="voice valen"><span class="tag">Rosario · Argentina</span><b>Valentina</b><p>Acento argentino con giros murcianos heredados de su abuelo.</p></div>
+    <div class="voice valen"><span class="tag">Rosario · Argentina</span><b>Valentina</b><p>Acento argentino de Rosario, cálido y luminoso.</p></div>
   </div>
   <div class="tl">
     <div class="bar" role="img" aria-label="Reparto de las voces en 60 segundos">
@@ -176,7 +187,7 @@ footer{padding-block:28px max(28px,env(safe-area-inset-bottom));font:400 .7rem v
   <div class="people">
     <article class="person lucia"><img src="img/lucia_face_master.jpg" alt="Lucía" loading="lazy"><span class="tag">Lyon · Francia</span><b>Lucía, 21</b><em>«Me fui a vivirlo todo.»</em><p>Estudiante de Erasmus. La cara luminosa del vídeo: un año de amigos de medio mundo, risas junto al Ródano y un acento que allí se le nota más que nunca.</p></article>
     <article class="person andres"><img src="img/andres_face_master.jpg" alt="Andrés" loading="lazy"><span class="tag">Örebro · Suecia</span><b>Andrés, 38</b><em>«Empecé de nuevo.»</em><p>Ingeniero murciano que ha rehecho su vida en Suecia, con un hijo pequeño. Donde anochece a las tres de la tarde, cuida un limonero en la ventana.</p></article>
-    <article class="person valen"><img src="img/valentina_face_master.jpg" alt="Valentina" loading="lazy"><span class="tag">Rosario · Argentina</span><b>Valentina, 27</b><em>«Nací lejos sin haberme ido nunca.»</em><p>Nieta de un murciano que emigró en los años 50. Nunca ha pisado España, pero heredó su acento… y su limonero.</p></article>
+    <article class="person valen"><img src="img/valentina_face_master.jpg" alt="Valentina" loading="lazy"><span class="tag">Rosario · Argentina</span><b>Valentina, 27</b><em>«Nací lejos sin haberme ido nunca.»</em><p>Nieta de un murciano que se fue con veinte años. Nunca ha pisado España; de su abuelo le quedan una foto y unas ganas enormes de conocerla.</p></article>
   </div>
 </div></section>
 
@@ -185,37 +196,37 @@ footer{padding-block:28px max(28px,env(safe-area-inset-bottom));font:400 .7rem v
 
   <div class="beat wide">
     <div class="meta"><b>01 · Huerta</b><span>0:00 – 0:05</span></div>
-    <div class="frame"><img src="img/p01_huerta.jpg" alt="" loading="lazy"></div>
-    <p class="desc">Amanecer sobre la huerta murciana: limoneros, acequias, el río y la sierra al fondo.</p>
-    <p class="music-note">Solo música</p>
+    <div class="endcard pend"><b>Murcia desde el aire</b><span>Toma aérea real de dron del centro de la ciudad, pendiente de incorporar</span></div>
+    <p class="desc">Amanecer sobre el centro de Murcia: la torre de la Catedral, los tejados y el Segura.</p>
+    <div class="vo region"><span class="n">La Región</span><q>Hay una tierra que cabe en un rincón del mapa… y que, sin moverse, ha llegado a medio mundo.</q></div>
   </div>
 
   <div class="beat wide">
     <div class="meta"><b>02 · El limón</b><span>0:05 – 0:09</span></div>
     <div class="frame"><img src="img/p02_limon.jpg" alt="" loading="lazy"></div>
-    <p class="desc">Una mano curtida arranca un limón y lo sostiene a contraluz.</p>
-    <div class="vo region"><span class="n">La Región</span><q>En el mapa ocupo muy poco. Pero estoy en medio mundo.</q></div>
+    <p class="desc">Una mano coge un limón del árbol y lo sostiene a contraluz. Es el objeto que viajará por el mundo.</p>
+    <p class="music-note">Música</p>
   </div>
 
   <div class="beat wide">
     <div class="meta"><b>03 · Lyon</b><span>0:09 – 0:14</span></div>
     <div class="frame"><img src="img/p03_lyon.jpg" alt="" loading="lazy"></div>
     <p class="desc">De noche junto al Ródano. Lucía cuenta algo con las manos y todos se ríen.</p>
-    <div class="vo lucia"><span class="n">Lucía</span><q>En Lyon me llaman “la del acho”. Y lo digo más que nunca.</q></div>
+    <div class="vo lucia"><span class="n">Lucía</span><q>Aquí nadie sabía dónde estaba Murcia, y en un año se la he enseñado a medio Lyon.</q></div>
   </div>
 
   <div class="beat wide">
     <div class="meta"><b>04 · Örebro</b><span>0:14 – 0:19</span></div>
     <div class="frame"><img src="img/p04_orebro.jpg" alt="" loading="lazy"></div>
     <p class="desc">Tres de la tarde y ya es de noche. Andrés riega su limonero; su hijo le mira.</p>
-    <div class="vo andres"><span class="n">Andrés</span><q>Aquí anochece a las tres. Por eso planté un limonero.</q></div>
+    <div class="vo andres"><span class="n">Andrés</span><q>Mi hijo nació en la nieve, pero cada noche le cuento cómo huele la huerta cuando florece el azahar.</q></div>
   </div>
 
   <div class="beat wide">
     <div class="meta"><b>05 · Rosario</b><span>0:19 – 0:26</span></div>
     <div class="frame"><img src="img/p05_rosario.jpg" alt="" loading="lazy"></div>
     <p class="desc">Atardecer en el patio. Valentina mira la foto de su abuelo junto al limonero recién plantado; detrás, el mismo árbol, hoy enorme.</p>
-    <div class="vo valen"><span class="n">Valentina</span><q>Nunca he estado en Murcia. Pero mi abuelo me dejó su acento… y su limonero.</q></div>
+    <div class="vo valen"><span class="n">Valentina</span><q>Mi abuelo se fue de Murcia con veinte años y esta foto; a mí me dejó la foto… y unas ganas enormes de ir por él.</q></div>
   </div>
 
   <div class="beat">
@@ -235,23 +246,23 @@ footer{padding-block:28px max(28px,env(safe-area-inset-bottom));font:400 .7rem v
       <figure class="andres"><div class="frame"><img src="img/p07b_andres_abrazo.jpg" alt="" loading="lazy"></div><figcaption>Andrés <span>Örebro</span></figcaption><p class="small">Abraza a su hijo.</p></figure>
       <figure class="valen"><div class="frame"><img src="img/p07c_valentina_limon.jpg" alt="" loading="lazy" style="object-position:82% 50%"></div><figcaption>Valentina <span>Rosario</span></figcaption><p class="small">Coge un limón del árbol.</p></figure>
     </div>
-    <div class="vo region"><span class="n">La Región</span><q>Algunos se fueron a vivirlo todo. Otros, a empezar de nuevo. Y otros nacieron lejos… sin haberse ido nunca.</q></div>
+    <div class="vo region"><span class="n">La Región</span><q>Unos se fueron a vivirlo todo, otros a empezar de nuevo, y otros nacieron lejos sin haberse ido nunca.</q></div>
   </div>
 
   <div class="beat">
     <div class="meta"><b>08 · Volver</b><span>0:38 – 0:44</span></div>
     <div class="trio">
-      <figure class="lucia"><div class="frame"><img src="img/p08a_lucia_billete.jpg" alt="" loading="lazy"></div><figcaption>Lucía <span>0:38</span></figcaption><p class="small">Un billete de vuelta en el móvil.</p><div class="vo lucia"><q>Vuelvo en junio.</q></div></figure>
-      <figure class="andres"><div class="frame"><img src="img/p08b_andres_llamada.jpg" alt="" loading="lazy" style="object-position:70% 50%"></div><figcaption>Andrés <span>0:40</span></figcaption><p class="small">Videollamada con su madre.</p><div class="vo andres"><q>¿Volver?… Ya veremos.</q></div></figure>
-      <figure class="valen"><div class="frame"><img src="img/p08c_valentina_vuelo.jpg" alt="" loading="lazy"></div><figcaption>Valentina <span>0:42</span></figcaption><p class="small">Reserva su primer vuelo a España.</p><div class="vo valen"><q>Yo voy a ir.</q></div></figure>
+      <figure class="lucia"><div class="frame"><img src="img/p08a_lucia_billete.jpg" alt="" loading="lazy"></div><figcaption>Lucía <span>0:38</span></figcaption><p class="small">Un billete de vuelta en el móvil.</p><div class="vo lucia"><q>En junio vuelvo a casa.</q></div></figure>
+      <figure class="andres"><div class="frame"><img src="img/p08b_andres_llamada.jpg" alt="" loading="lazy" style="object-position:70% 50%"></div><figcaption>Andrés <span>0:40</span></figcaption><p class="small">Videollamada con su madre.</p><div class="vo andres"><q>¿Volver?… Quién sabe.</q></div></figure>
+      <figure class="valen"><div class="frame"><img src="img/p08c_valentina_vuelo.jpg" alt="" loading="lazy"></div><figcaption>Valentina <span>0:42</span></figcaption><p class="small">Reserva su primer vuelo a España.</p><div class="vo valen"><q>Y yo, por fin, voy a ir.</q></div></figure>
     </div>
   </div>
 
   <div class="beat wide">
-    <div class="meta"><b>09 · La puerta</b><span>0:44 – 0:50</span></div>
-    <div class="frame"><img src="img/p09_puerta.jpg" alt="" loading="lazy"></div>
-    <p class="desc">De vuelta en la huerta. Una casa con la puerta abierta y la luz entrando. Nadie dentro: un sitio que espera.</p>
-    <div class="vo region"><span class="n">La Región</span><q>Yo no me muevo de aquí. Para que siempre sepáis volver.</q></div>
+    <div class="meta"><b>09 · Murcia</b><span>0:44 – 0:50</span></div>
+    <div class="frame"><img src="img/p09_catedral.jpg" alt="" loading="lazy"></div>
+    <p class="desc">Atardecer en la plaza de la Catedral. La vida sigue en Murcia: la Región espera, en el mismo sitio, a los que están lejos.</p>
+    <div class="vo region"><span class="n">La Región</span><q>Y yo seguiré aquí, en el mismo rincón del mapa, para que siempre sepáis volver.</q></div>
   </div>
 
   <div class="beat wide">
@@ -265,17 +276,18 @@ footer{padding-block:28px max(28px,env(safe-area-inset-bottom));font:400 .7rem v
 <section><div class="wrap">
   <div class="head"><span class="eyebrow">Guion de locución</span><h2>Todo lo que se escucha.</h2></div>
   <div class="script">
-    <div class="line music"><span class="t">0:00</span><div><p>Música. Amanecer en la huerta.</p></div></div>
-    <div class="line region"><span class="t">0:05</span><div><span class="who">La Región</span><p>En el mapa ocupo muy poco. Pero estoy en medio mundo.</p></div></div>
-    <div class="line lucia"><span class="t">0:09</span><div><span class="who">Lucía</span><p>En Lyon me llaman «la del acho». Y lo digo más que nunca.</p></div></div>
-    <div class="line andres"><span class="t">0:14</span><div><span class="who">Andrés</span><p>Aquí anochece a las tres. Por eso planté un limonero.</p></div></div>
-    <div class="line valen"><span class="t">0:19</span><div><span class="who">Valentina</span><p>Nunca he estado en Murcia. Pero mi abuelo me dejó su acento… y su limonero.</p></div></div>
+    <div class="line music"><span class="t">0:00</span><div><p>Música. Amanecer sobre Murcia.</p></div></div>
+    <div class="line region"><span class="t">0:01</span><div><span class="who">La Región</span><p>Hay una tierra que cabe en un rincón del mapa… y que, sin moverse, ha llegado a medio mundo.</p></div></div>
+    <div class="line music"><span class="t">0:06</span><div><p>Música. La mano y el limón.</p></div></div>
+    <div class="line lucia"><span class="t">0:09</span><div><span class="who">Lucía</span><p>Aquí nadie sabía dónde estaba Murcia, y en un año se la he enseñado a medio Lyon.</p></div></div>
+    <div class="line andres"><span class="t">0:14</span><div><span class="who">Andrés</span><p>Mi hijo nació en la nieve, pero cada noche le cuento cómo huele la huerta cuando florece el azahar.</p></div></div>
+    <div class="line valen"><span class="t">0:19</span><div><span class="who">Valentina</span><p>Mi abuelo se fue de Murcia con veinte años y esta foto; a mí me dejó la foto… y unas ganas enormes de ir por él.</p></div></div>
     <div class="line music"><span class="t">0:26</span><div><p>Respiro musical.</p></div></div>
-    <div class="line region"><span class="t">0:29</span><div><span class="who">La Región</span><p>Algunos se fueron a vivirlo todo. Otros, a empezar de nuevo. Y otros nacieron lejos… sin haberse ido nunca.</p></div></div>
-    <div class="line lucia"><span class="t">0:38</span><div><span class="who">Lucía</span><p>Vuelvo en junio.</p></div></div>
-    <div class="line andres"><span class="t">0:40</span><div><span class="who">Andrés</span><p>¿Volver?… Ya veremos.</p></div></div>
-    <div class="line valen"><span class="t">0:42</span><div><span class="who">Valentina</span><p>Yo voy a ir.</p></div></div>
-    <div class="line region"><span class="t">0:44</span><div><span class="who">La Región</span><p>Yo no me muevo de aquí. Para que siempre sepáis volver.</p></div></div>
+    <div class="line region"><span class="t">0:29</span><div><span class="who">La Región</span><p>Unos se fueron a vivirlo todo, otros a empezar de nuevo, y otros nacieron lejos sin haberse ido nunca.</p></div></div>
+    <div class="line lucia"><span class="t">0:38</span><div><span class="who">Lucía</span><p>En junio vuelvo a casa.</p></div></div>
+    <div class="line andres"><span class="t">0:40</span><div><span class="who">Andrés</span><p>¿Volver?… Quién sabe.</p></div></div>
+    <div class="line valen"><span class="t">0:42</span><div><span class="who">Valentina</span><p>Y yo, por fin, voy a ir.</p></div></div>
+    <div class="line region"><span class="t">0:44</span><div><span class="who">La Región</span><p>Y yo seguiré aquí, en el mismo rincón del mapa, para que siempre sepáis volver.</p></div></div>
     <div class="line music"><span class="t">0:50</span><div><p>Rótulo final y música de cierre.</p></div></div>
   </div>
 </div></section>
@@ -293,6 +305,6 @@ footer{padding-block:28px max(28px,env(safe-area-inset-bottom));font:400 .7rem v
 </div></section>
 </main>
 
-<footer><div class="wrap">Día de las Comunidades de la Región de Murcia en el Exterior · Vídeo de apertura · Propuesta v1</div></footer>
+<footer><div class="wrap">Día de las Comunidades de la Región de Murcia en el Exterior · Vídeo de apertura · Propuesta v2</div></footer>
 </body>
 </html>
