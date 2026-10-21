@@ -1,5 +1,298 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow"><title>Día de las Comunidades · Vídeo de apertura</title>
-<style>html,body{margin:0;background:#ececea}main{max-width:1400px;margin:0 auto;padding:16px;display:grid;gap:16px}
-img{width:100%;height:auto;display:block;background:#fff;box-shadow:0 2px 14px rgba(0,0,0,.12);border-radius:2px}</style></head>
-<body><main><img src="p/01.jpg" alt="Página 1" loading="eager"><img src="p/02.jpg" alt="Página 2" loading="eager"><img src="p/03.jpg" alt="Página 3" loading="lazy"><img src="p/04.jpg" alt="Página 4" loading="lazy"><img src="p/05.jpg" alt="Página 5" loading="lazy"><img src="p/06.jpg" alt="Página 6" loading="lazy"><img src="p/07.jpg" alt="Página 7" loading="lazy"><img src="p/08.jpg" alt="Página 8" loading="lazy"><img src="p/09.jpg" alt="Página 9" loading="lazy"><img src="p/10.jpg" alt="Página 10" loading="lazy"><img src="p/11.jpg" alt="Página 11" loading="lazy"><img src="p/12.jpg" alt="Página 12" loading="lazy"><img src="p/13.jpg" alt="Página 13" loading="lazy"></main></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Día de las Comunidades · Vídeo de apertura</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#ffffff; --ink:#1a1d1b; --muted:#6b716d; --line:#e6e8e6; --soft:#f6f6f3;
+  --region:#2f6b4f; --lucia:#c9731f; --andres:#3a6ea5; --valen:#b5476b; --music:#c9ccc9;
+  --serif:"Instrument Serif",Georgia,serif; --sans:"Hanken Grotesk",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--sans)}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;line-height:1.05;text-wrap:balance}
+h2{font-size:clamp(2.1rem,6vw,3.4rem)}
+p{margin:0}
+.eyebrow{font:500 .7rem var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.region{--c:var(--region)} .lucia{--c:var(--lucia)} .andres{--c:var(--andres)} .valen{--c:var(--valen)} .music{--c:var(--music)}
+section{padding-block:72px}
+section+section{border-top:1px solid var(--line)}
+
+/* HERO */
+.hero{position:relative;min-height:88svh;display:flex;align-items:flex-end;color:#fff;background:#1d211d;padding:0;border:0}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 30%,rgba(8,10,8,.85) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-block:0 max(44px,env(safe-area-inset-bottom));display:grid;gap:16px;width:100%}
+.hero .eyebrow{color:#e7e2d6}
+.hero h1{font-size:clamp(2.7rem,9vw,5.6rem);line-height:.98}
+.hero .sub{font:italic 400 clamp(1.25rem,3.5vw,1.7rem) var(--serif);color:#ebe6da}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.chips span{font:500 .72rem var(--mono);letter-spacing:.08em;text-transform:uppercase;border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:6px 12px}
+.scroll{font:500 .68rem var(--mono);letter-spacing:.16em;text-transform:uppercase;color:#cfc9bc;margin-top:18px}
+
+/* IDEA */
+.idea{display:grid;gap:36px}
+.idea .big{font:400 clamp(1.7rem,5vw,2.6rem)/1.2 var(--serif);max-width:24ch}
+.idea .big em{color:var(--region)}
+.idea .lead{color:#3d433f;max-width:58ch}
+.keys{display:grid;gap:22px}
+.keys div{border-top:1px solid var(--ink);padding-top:12px;display:grid;gap:4px}
+.keys b{font-weight:600}.keys span{color:var(--muted)}
+.idea figure{margin:0;border-radius:4px;overflow:hidden;aspect-ratio:4/3}
+.idea figure img{width:100%;height:100%;object-fit:cover}
+@media(min-width:860px){.idea{grid-template-columns:1fr 1fr;align-items:center}.keys{grid-template-columns:1fr 1fr 1fr}.idea .keys{grid-column:1/-1}}
+
+/* VOICES */
+.head{display:grid;gap:10px;margin-bottom:36px}
+.voices{display:grid;gap:26px}
+.voice{border-top:4px solid var(--c);padding-top:14px;display:grid;gap:4px}
+.voice .tag{font:500 .7rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--c)}
+.voice b{font:400 2rem var(--serif)}
+.voice p{color:var(--muted)}
+@media(min-width:700px){.voices{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.voices{grid-template-columns:repeat(4,1fr)}}
+.tl{margin-top:44px;display:grid;gap:10px}
+.bar{display:flex;height:40px;border-radius:4px;overflow:hidden;gap:2px}
+.bar i{background:var(--c)}
+.ticks{display:flex;justify-content:space-between;font:400 .72rem var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.9rem}
+.legend span{display:flex;align-items:center;gap:7px}.legend i{width:11px;height:11px;border-radius:2px;background:var(--c)}
+
+/* PEOPLE */
+.people{display:grid;gap:48px}
+.person{display:grid;gap:12px}
+.person img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%;border-radius:4px;border-bottom:5px solid var(--c)}
+.person .tag{font:500 .7rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--c);margin-top:6px}
+.person b{font:400 2.4rem/1 var(--serif)}
+.person em{font:italic 400 1.4rem var(--serif);color:var(--c)}
+.person p{color:#454b47}
+@media(min-width:760px){.people{grid-template-columns:repeat(3,1fr);gap:28px}}
+
+/* STORYBOARD */
+.story{background:var(--soft)}
+.beat{display:grid;gap:16px;padding-block:44px;border-top:1px solid var(--line)}
+.beat:first-of-type{border-top:0;padding-top:0}
+.meta{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font:500 .74rem var(--mono);color:var(--muted);letter-spacing:.06em;font-variant-numeric:tabular-nums}
+.meta b{color:var(--ink);font-weight:500;letter-spacing:.1em;text-transform:uppercase}
+.frame{border-radius:4px;overflow:hidden;background:#ddd;aspect-ratio:16/9}
+.frame img{width:100%;height:100%;object-fit:cover}
+.desc{color:#454b47;max-width:60ch}
+.vo{border-left:4px solid var(--c);padding:4px 0 4px 16px;display:grid;gap:2px}
+.vo .n{font:500 .68rem var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--c)}
+.vo q{font:400 clamp(1.55rem,5.2vw,2.2rem)/1.2 var(--serif);quotes:"«" "»";text-wrap:pretty}
+.music-note{font:500 .72rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.music-note::before{content:"♪  "}
+.trio{display:grid;gap:22px}
+.trio figure{margin:0;display:grid;gap:8px}
+.trio figcaption{display:flex;justify-content:space-between;font:500 .7rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--c)}
+.trio figcaption span{color:var(--muted)}
+.trio .frame{aspect-ratio:4/5}
+.trio .small{font-size:.95rem;color:#454b47}
+.trio .vo q{font-size:1.5rem}
+@media(min-width:760px){.trio{grid-template-columns:repeat(3,1fr);gap:18px}}
+@media(min-width:960px){
+  .beat.wide{grid-template-columns:1.7fr 1fr;column-gap:36px;align-items:start}
+  .beat.wide .meta{grid-column:1/-1}
+  .beat.wide .frame{grid-row:2/5}
+}
+.endcard{aspect-ratio:16/9;background:#0f0f0f;border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:#fff;text-align:center;padding:20px}
+.endcard i{width:26px;height:26px;border-radius:50%;background:#f2c72e}
+.endcard b{font:400 clamp(1.8rem,6vw,3rem) var(--serif)}
+.endcard span{font-size:.85rem;color:#aaa;max-width:34ch}
+
+/* SCRIPT */
+.script{display:grid;gap:22px;max-width:760px}
+.line{display:grid;grid-template-columns:3.6rem 1fr;gap:12px;align-items:baseline}
+.line .t{font:400 .78rem var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.line .who{display:block;font:500 .66rem var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--c);margin-bottom:2px}
+.line p{font:400 1.45rem/1.3 var(--serif)}
+.line.music p{font:italic .95rem var(--sans);color:var(--muted)}
+
+/* SPEC */
+.spec{display:grid;gap:18px}
+.spec div{border-top:1px solid var(--line);padding-top:10px;display:grid;gap:2px}
+.spec span{font:500 .68rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+@media(min-width:760px){.spec{grid-template-columns:repeat(3,1fr)}}
+footer{padding-block:28px max(28px,env(safe-area-inset-bottom));font:400 .7rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img src="img/p01_huerta.jpg" alt="Huerta murciana al amanecer">
+  <div class="wrap">
+    <span class="eyebrow">Propuesta audiovisual · Para aprobación</span>
+    <h1>Día de las Comunidades de la Región de Murcia en el Exterior</h1>
+    <p class="sub">Vídeo de apertura del acto · 28 de octubre de 2026</p>
+    <div class="chips"><span>Pieza emotiva · 60 s</span><span>Video Wall</span><span>Primera edición</span></div>
+    <p class="scroll">Desliza ↓</p>
+  </div>
+</header>
+
+<main>
+<section><div class="wrap idea">
+  <div style="display:grid;gap:22px">
+    <span class="eyebrow">La idea</span>
+    <p class="big">Una tierra pequeña en el mapa, <em>presente en medio mundo.</em></p>
+    <p class="lead">La voz que nos guía es la propia Región de Murcia. No se presenta, no habla de hijos: habla como habla una tierra que espera. Tres murcianos que viven lejos cuentan, en una frase, su manera de llevarla consigo.</p>
+  </div>
+  <figure><img src="img/p02_limon.jpg" alt="Una mano coge un limón del árbol" loading="lazy"></figure>
+  <div class="keys">
+    <div><b>Tres países reales</b><span>Lyon, Örebro y Rosario: ciudades con comunidad murciana reconocida.</span></div>
+    <div><b>Un hilo visual</b><span>Un limón de la huerta viaja de plano en plano y une las tres vidas.</span></div>
+    <div><b>Nadie habla a cámara</b><span>Todo se cuenta con voces en off. La imagen respira.</span></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="head"><span class="eyebrow">Las voces</span><h2>Cuatro voces, sesenta segundos.</h2></div>
+  <div class="voices">
+    <div class="voice region"><span class="tag">Murcia · Narradora</span><b>La Región</b><p>Mujer madura, cálida, sin impostar. Una tierra que no se mueve para que todos sepan volver.</p></div>
+    <div class="voice lucia"><span class="tag">Lyon · Francia</span><b>Lucía</b><p>Joven y alegre, con la sonrisa en la voz y un acento murciano suave.</p></div>
+    <div class="voice andres"><span class="tag">Örebro · Suecia</span><b>Andrés</b><p>Grave, tranquilo, con una nostalgia serena.</p></div>
+    <div class="voice valen"><span class="tag">Rosario · Argentina</span><b>Valentina</b><p>Acento argentino con giros murcianos heredados de su abuelo.</p></div>
+  </div>
+  <div class="tl">
+    <div class="bar" role="img" aria-label="Reparto de las voces en 60 segundos">
+      <i class="music" style="flex:5"></i><i class="region" style="flex:4"></i><i class="lucia" style="flex:5"></i><i class="andres" style="flex:5"></i><i class="valen" style="flex:7"></i><i class="music" style="flex:3"></i><i class="region" style="flex:9"></i><i class="lucia" style="flex:2"></i><i class="andres" style="flex:2"></i><i class="valen" style="flex:2"></i><i class="region" style="flex:6"></i><i class="music" style="flex:10"></i>
+    </div>
+    <div class="ticks"><span>0:00</span><span>0:15</span><span>0:30</span><span>0:45</span><span>1:00</span></div>
+    <div class="legend"><span class="region"><i></i>La Región</span><span class="lucia"><i></i>Lucía</span><span class="andres"><i></i>Andrés</span><span class="valen"><i></i>Valentina</span><span class="music"><i></i>Solo música</span></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="head"><span class="eyebrow">Los protagonistas</span><h2>Tres maneras de ser de Murcia lejos de Murcia.</h2></div>
+  <div class="people">
+    <article class="person lucia"><img src="img/lucia_face_master.jpg" alt="Lucía" loading="lazy"><span class="tag">Lyon · Francia</span><b>Lucía, 21</b><em>«Me fui a vivirlo todo.»</em><p>Estudiante de Erasmus. La cara luminosa del vídeo: un año de amigos de medio mundo, risas junto al Ródano y un acento que allí se le nota más que nunca.</p></article>
+    <article class="person andres"><img src="img/andres_face_master.jpg" alt="Andrés" loading="lazy"><span class="tag">Örebro · Suecia</span><b>Andrés, 38</b><em>«Empecé de nuevo.»</em><p>Ingeniero murciano que ha rehecho su vida en Suecia, con un hijo pequeño. Donde anochece a las tres de la tarde, cuida un limonero en la ventana.</p></article>
+    <article class="person valen"><img src="img/valentina_face_master.jpg" alt="Valentina" loading="lazy"><span class="tag">Rosario · Argentina</span><b>Valentina, 27</b><em>«Nací lejos sin haberme ido nunca.»</em><p>Nieta de un murciano que emigró en los años 50. Nunca ha pisado España, pero heredó su acento… y su limonero.</p></article>
+  </div>
+</div></section>
+
+<section class="story"><div class="wrap">
+  <div class="head"><span class="eyebrow">Storyboard</span><h2>Plano a plano.</h2></div>
+
+  <div class="beat wide">
+    <div class="meta"><b>01 · Huerta</b><span>0:00 – 0:05</span></div>
+    <div class="frame"><img src="img/p01_huerta.jpg" alt="" loading="lazy"></div>
+    <p class="desc">Amanecer sobre la huerta murciana: limoneros, acequias, el río y la sierra al fondo.</p>
+    <p class="music-note">Solo música</p>
+  </div>
+
+  <div class="beat wide">
+    <div class="meta"><b>02 · El limón</b><span>0:05 – 0:09</span></div>
+    <div class="frame"><img src="img/p02_limon.jpg" alt="" loading="lazy"></div>
+    <p class="desc">Una mano curtida arranca un limón y lo sostiene a contraluz.</p>
+    <div class="vo region"><span class="n">La Región</span><q>En el mapa ocupo muy poco. Pero estoy en medio mundo.</q></div>
+  </div>
+
+  <div class="beat wide">
+    <div class="meta"><b>03 · Lyon</b><span>0:09 – 0:14</span></div>
+    <div class="frame"><img src="img/p03_lyon.jpg" alt="" loading="lazy"></div>
+    <p class="desc">De noche junto al Ródano. Lucía cuenta algo con las manos y todos se ríen.</p>
+    <div class="vo lucia"><span class="n">Lucía</span><q>En Lyon me llaman “la del acho”. Y lo digo más que nunca.</q></div>
+  </div>
+
+  <div class="beat wide">
+    <div class="meta"><b>04 · Örebro</b><span>0:14 – 0:19</span></div>
+    <div class="frame"><img src="img/p04_orebro.jpg" alt="" loading="lazy"></div>
+    <p class="desc">Tres de la tarde y ya es de noche. Andrés riega su limonero; su hijo le mira.</p>
+    <div class="vo andres"><span class="n">Andrés</span><q>Aquí anochece a las tres. Por eso planté un limonero.</q></div>
+  </div>
+
+  <div class="beat wide">
+    <div class="meta"><b>05 · Rosario</b><span>0:19 – 0:26</span></div>
+    <div class="frame"><img src="img/p05_rosario.jpg" alt="" loading="lazy"></div>
+    <p class="desc">Atardecer en el patio. Valentina mira la foto de su abuelo junto al limonero recién plantado; detrás, el mismo árbol, hoy enorme.</p>
+    <div class="vo valen"><span class="n">Valentina</span><q>Nunca he estado en Murcia. Pero mi abuelo me dejó su acento… y su limonero.</q></div>
+  </div>
+
+  <div class="beat">
+    <div class="meta"><b>06 · Tres manos</b><span>0:26 – 0:29</span></div>
+    <div class="trio">
+      <figure class="lucia"><div class="frame"><img src="img/p06a_lucia_mano.jpg" alt="" loading="lazy"></div><figcaption>Lucía <span>Lyon</span></figcaption></figure>
+      <figure class="andres"><div class="frame"><img src="img/p06b_andres_mano.jpg" alt="" loading="lazy"></div><figcaption>Andrés <span>Örebro</span></figcaption></figure>
+      <figure class="valen"><div class="frame"><img src="img/p06c_valentina_mano.jpg" alt="" loading="lazy"></div><figcaption>Valentina <span>Rosario</span></figcaption></figure>
+    </div>
+    <p class="music-note">Respiro musical</p>
+  </div>
+
+  <div class="beat">
+    <div class="meta"><b>07 · Montaje</b><span>0:29 – 0:38</span></div>
+    <div class="trio">
+      <figure class="lucia"><div class="frame"><img src="img/p07a_lucia_baile.jpg" alt="" loading="lazy" style="object-position:45% 50%"></div><figcaption>Lucía <span>Lyon</span></figcaption><p class="small">Baila con sus amigos junto al río.</p></figure>
+      <figure class="andres"><div class="frame"><img src="img/p07b_andres_abrazo.jpg" alt="" loading="lazy"></div><figcaption>Andrés <span>Örebro</span></figcaption><p class="small">Abraza a su hijo.</p></figure>
+      <figure class="valen"><div class="frame"><img src="img/p07c_valentina_limon.jpg" alt="" loading="lazy" style="object-position:82% 50%"></div><figcaption>Valentina <span>Rosario</span></figcaption><p class="small">Coge un limón del árbol.</p></figure>
+    </div>
+    <div class="vo region"><span class="n">La Región</span><q>Algunos se fueron a vivirlo todo. Otros, a empezar de nuevo. Y otros nacieron lejos… sin haberse ido nunca.</q></div>
+  </div>
+
+  <div class="beat">
+    <div class="meta"><b>08 · Volver</b><span>0:38 – 0:44</span></div>
+    <div class="trio">
+      <figure class="lucia"><div class="frame"><img src="img/p08a_lucia_billete.jpg" alt="" loading="lazy"></div><figcaption>Lucía <span>0:38</span></figcaption><p class="small">Un billete de vuelta en el móvil.</p><div class="vo lucia"><q>Vuelvo en junio.</q></div></figure>
+      <figure class="andres"><div class="frame"><img src="img/p08b_andres_llamada.jpg" alt="" loading="lazy" style="object-position:70% 50%"></div><figcaption>Andrés <span>0:40</span></figcaption><p class="small">Videollamada con su madre.</p><div class="vo andres"><q>¿Volver?… Ya veremos.</q></div></figure>
+      <figure class="valen"><div class="frame"><img src="img/p08c_valentina_vuelo.jpg" alt="" loading="lazy"></div><figcaption>Valentina <span>0:42</span></figcaption><p class="small">Reserva su primer vuelo a España.</p><div class="vo valen"><q>Yo voy a ir.</q></div></figure>
+    </div>
+  </div>
+
+  <div class="beat wide">
+    <div class="meta"><b>09 · La puerta</b><span>0:44 – 0:50</span></div>
+    <div class="frame"><img src="img/p09_puerta.jpg" alt="" loading="lazy"></div>
+    <p class="desc">De vuelta en la huerta. Una casa con la puerta abierta y la luz entrando. Nadie dentro: un sitio que espera.</p>
+    <div class="vo region"><span class="n">La Región</span><q>Yo no me muevo de aquí. Para que siempre sepáis volver.</q></div>
+  </div>
+
+  <div class="beat wide">
+    <div class="meta"><b>10 · Rótulo</b><span>0:50 – 1:00</span></div>
+    <div class="endcard"><i></i><b>28 de octubre</b><span>Día de las Comunidades de la Región de Murcia en el Exterior</span></div>
+    <p class="desc">Fundido a negro, rótulo del Día y logos institucionales.</p>
+    <p class="music-note">La música cierra</p>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="head"><span class="eyebrow">Guion de locución</span><h2>Todo lo que se escucha.</h2></div>
+  <div class="script">
+    <div class="line music"><span class="t">0:00</span><div><p>Música. Amanecer en la huerta.</p></div></div>
+    <div class="line region"><span class="t">0:05</span><div><span class="who">La Región</span><p>En el mapa ocupo muy poco. Pero estoy en medio mundo.</p></div></div>
+    <div class="line lucia"><span class="t">0:09</span><div><span class="who">Lucía</span><p>En Lyon me llaman «la del acho». Y lo digo más que nunca.</p></div></div>
+    <div class="line andres"><span class="t">0:14</span><div><span class="who">Andrés</span><p>Aquí anochece a las tres. Por eso planté un limonero.</p></div></div>
+    <div class="line valen"><span class="t">0:19</span><div><span class="who">Valentina</span><p>Nunca he estado en Murcia. Pero mi abuelo me dejó su acento… y su limonero.</p></div></div>
+    <div class="line music"><span class="t">0:26</span><div><p>Respiro musical.</p></div></div>
+    <div class="line region"><span class="t">0:29</span><div><span class="who">La Región</span><p>Algunos se fueron a vivirlo todo. Otros, a empezar de nuevo. Y otros nacieron lejos… sin haberse ido nunca.</p></div></div>
+    <div class="line lucia"><span class="t">0:38</span><div><span class="who">Lucía</span><p>Vuelvo en junio.</p></div></div>
+    <div class="line andres"><span class="t">0:40</span><div><span class="who">Andrés</span><p>¿Volver?… Ya veremos.</p></div></div>
+    <div class="line valen"><span class="t">0:42</span><div><span class="who">Valentina</span><p>Yo voy a ir.</p></div></div>
+    <div class="line region"><span class="t">0:44</span><div><span class="who">La Región</span><p>Yo no me muevo de aquí. Para que siempre sepáis volver.</p></div></div>
+    <div class="line music"><span class="t">0:50</span><div><p>Rótulo final y música de cierre.</p></div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="head"><span class="eyebrow">Ficha técnica</span><h2>Datos de producción.</h2></div>
+  <div class="spec">
+    <div><span>Duración</span><b>60 segundos</b></div>
+    <div><span>Uso</span><b>Video Wall, apertura del acto; versión para redes</b></div>
+    <div><span>Formato</span><b>16:9 · 25 fps</b></div>
+    <div><span>Imagen</span><b>Generada con IA a partir de personajes fijos, con estética de cine clásico de gran formato</b></div>
+    <div><span>Sonido</span><b>Cuatro voces en off y música original emotiva</b></div>
+    <div><span>Nota</span><b>Fotogramas de referencia; el etalonaje final se aplica en postproducción</b></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">Día de las Comunidades de la Región de Murcia en el Exterior · Vídeo de apertura · Propuesta v1</div></footer>
+</body>
+</html>
